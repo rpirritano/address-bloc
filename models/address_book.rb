@@ -1,4 +1,5 @@
 require_relative 'entry'
+require_relative 'controllers/menu_controller'
 
 class AddressBook
   attr_reader :entries
@@ -14,10 +15,21 @@ class AddressBook
 
       if name < entry.name
         break
-      end
+      
       index+=1
     end
 
     entries.insert(index, Entry.new(name, phone_number, email))
   end
+
+
+
+
+  menu = MenuController.new
+
+  system "clear"
+  puts "WelcomsAWSasasaSae to AddressBloc!"
+
+  menu.main_menu
+
 end
