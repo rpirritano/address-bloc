@@ -1,6 +1,6 @@
 require_relative '../models/address_book'
 
-class MenuController
+ class MenuController
    attr_reader :address_book
 
    def initialize
@@ -17,6 +17,7 @@ class MenuController
      print "Enter your selection: "
 
      selection = gets.to_i
+
      case selection
        when 1
         system "clear"
@@ -62,7 +63,7 @@ class MenuController
     def create_entry
 
       system "clear"
-      puts "new AddressBloc Entry"
+      puts "New AddressBloc Entry"
 
       print "Name: "
       name = gets.chomp
