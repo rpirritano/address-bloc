@@ -18,7 +18,7 @@ class MenuController
 
      selection = gets.to_i
      case selection
-      when 1
+       when 1
         system "clear"
         view_all_entries
         main_menu
